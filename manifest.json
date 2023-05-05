@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "TheyAll",
+    "version": 1.0,
+    "description": "Changes all pronouns to they/them",
+    "background":
+    {
+        "scripts": ["thirdParty/jquery-2.0.3.js", "background.js"]
+    },
+    "content_scripts": [
+        {
+            "js": ["thirdParty/jquery.1.10.2.min.js","scripts/content.js"],
+            "matches": [
+                "https://developer.chrome.com/docs/extensions/*",
+                "https://developers.chrome.com/docs/webstore/*"
+            ]
+        }
+    ]
+}
